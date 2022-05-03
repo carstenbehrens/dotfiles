@@ -191,7 +191,7 @@ for_window [class="Thunderbird"] move to workspace $ws6
 # Start DMenu
 bindsym $mod+d exec "rofi -modi drun -show drun -theme dracula -show-icons"
 
-# Assign worspaces to specific monitors
+# Assign workspaces to specific monitors
 
 # Laptop
 
