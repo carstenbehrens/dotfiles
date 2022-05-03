@@ -156,7 +156,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	output $external
-	status_command /home/cbe/.local/bin/bumblebee-status/bumblebee-status -m battery spotify time date -p time.format="%H:%M" -t dracula-powerline
+	status_command /home/cbe/.local/bin/bumblebee-status/bumblebee-status -m battery pasink pasource spotify time date -p time.format="%H:%M" -t dracula-powerline
 	font pango:Inconsolata 8 
 	position top
 }
