@@ -174,7 +174,10 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 # Set key repeat speed to something that makes sense
-exec_always xset r rate 200 70
+exec_always xset r rate 200 65
+exec bash /home/cbe/cron/cron.sh
+
+exec bash 
 
 # Set default Layout
 exec bash /home/cbe/.config/xrandr/defaultLayout.sh
