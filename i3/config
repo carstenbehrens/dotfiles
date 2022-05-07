@@ -9,7 +9,7 @@ set $ws2 "2. Browse"
 set $ws3 "3. Notes"
 set $ws4 "4. Spotify"
 set $ws5 "5. Other"
-set $ws6 "6. Thunderbird"
+set $ws6 "6. Geary"
 set $ws7 "7. Teams"
 
 # Monitor Names
@@ -156,12 +156,14 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	output $external
-	status_command /home/cbe/.local/bin/bumblebee-status/bumblebee-status -m battery pasink pasource spotify time date -p time.format="%H:%M" -t dracula-powerline
+	status_command /home/cbe/.local/bin/bumblebee-status/bumblebee-status -m bluetooth2 battery pasink pasource spotify time date -p time.format="%H:%M" -t dracula-powerline
 	font pango:Inconsolata 8 
 	position top
+  height 25
 }
 
 # Custom Colors
+
 # class                 border  bground text    indicator child_border
 client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
@@ -172,7 +174,7 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 # Set key repeat speed to something that makes sense
-exec xset r rate 200 70
+exec_always xset r rate 200 70
 
 # Set default Layout
 exec bash /home/cbe/.config/xrandr/defaultLayout.sh
@@ -184,15 +186,14 @@ for_window [class="Spotify"] move to workspace $ws4
 # Load Teams
 for_window [class="Microsoft Teams - Preview"] move to workspace $ws7
 
-# Load Thunderbird
-exec thunderbird
-for_window [class="Thunderbird"] move to workspace $ws6
+# Load Geary
+exec geary
+for_window [class="Geary"] move to workspace $ws6
 
 # Start DMenu
 bindsym $mod+d exec "rofi -modi drun -show drun -theme dracula -show-icons"
 
 # Assign workspaces to specific monitors
-
 # Laptop
 
 workspace $ws7 output $laptop
@@ -205,3 +206,14 @@ workspace $ws4 output $external
 workspace $ws5 output $external
 workspace $ws6 output $external
 
+# i3-gaps
+
+for_window [class=".*"] border pixel 2
+
+# Only enable gaps on a workspace when there is at least one container
+smart_gaps on
+
+# Only draw border when there is more than one window in a workspace
+smart_borders on
+
+gaps inner 5

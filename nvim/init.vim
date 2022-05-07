@@ -10,5 +10,11 @@ call plug#end()
 :nmap <c-f> :BLines<CR>
 :nmap <c-q> :q!<CR>:q!<CR>
 
-:set colorcolumn=100
+:set tabstop=2
+:set expandtab
+:set shiftwidth=2
+:set laststatus=0
+:set noruler
+:set noshowmode
+
 
