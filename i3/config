@@ -176,6 +176,7 @@ client.background       #F8F8F2
 # Set key repeat speed to something that makes sense
 exec_always xset r rate 200 65
 exec bash /home/cbe/cron/cron.sh
+exec bash /home/cbe/cron/wallpaper.sh
 
 exec bash 
 
@@ -212,9 +213,6 @@ workspace $ws6 output $external
 # i3-gaps
 
 for_window [class=".*"] border pixel 2
-
-# Only enable gaps on a workspace when there is at least one container
-smart_gaps on
 
 # Only draw border when there is more than one window in a workspace
 smart_borders on
