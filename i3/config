@@ -214,7 +214,4 @@ workspace $ws6 output $external
 
 for_window [class=".*"] border pixel 2
 
-# Only draw border when there is more than one window in a workspace
-smart_borders on
-
 gaps inner 5
