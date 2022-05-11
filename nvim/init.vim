@@ -9,7 +9,7 @@ call plug#end()
 :nmap <c-s> :w<CR>
 :imap <c-s> <Esc>:w<CR>a
 :nmap <c-f> :BLines<CR>
-:nmap <c-q> :q!<CR>:q!<CR>
+:nmap <c-w> :q!<CR>:q!<CR>
 
 :set tabstop=2
 :set expandtab
@@ -19,5 +19,5 @@ call plug#end()
 :set noshowmode
 
 let g:nv_search_paths = ['~/Notes']
-nnoremap <silent> <c-t> :NV!<CR>
+nnoremap <silent> <c-p> :NV!<CR>
 let g:nv_create_note_window = 'e'
