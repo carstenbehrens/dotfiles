@@ -175,10 +175,14 @@ client.background       #F8F8F2
 
 # Set key repeat speed to something that makes sense
 exec_always xset r rate 200 65
+
 exec bash /home/cbe/cron/cron.sh
+
+# Set wallpapers
 exec bash /home/cbe/cron/wallpaper.sh
 
-exec bash 
+# Start emacs daemon
+exec bash emacs --daemon &
 
 # Set default Layout
 exec bash /home/cbe/.config/xrandr/defaultLayout.sh
