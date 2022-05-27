@@ -176,10 +176,10 @@ client.background       #F8F8F2
 # Set key repeat speed to something that makes sense
 exec_always xset r rate 200 65
 
-exec bash /home/cbe/cron/cron.sh
+# Set wallpaper
+exec_always feh --recursive --bg-fill  ~/Wallpapers/10-14-Night-6k.jpg
 
-# Set wallpapers
-exec bash /home/cbe/cron/wallpaper.sh
+exec bash /home/cbe/cron/cron.sh
 
 # Start emacs daemon
 exec bash emacs --daemon &
