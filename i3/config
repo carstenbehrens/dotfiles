@@ -176,6 +176,12 @@ client.background       #F8F8F2
 # Set key repeat speed to something that makes sense
 exec_always xset r rate 200 65
 
+# Disable screen saver
+exec_always xset s off
+
+# Disable power saving features
+exec_always xset -dpms
+
 # Set wallpaper
 exec_always feh --recursive --bg-fill  ~/Wallpapers/10-14-Night-6k.jpg
 
@@ -196,6 +202,10 @@ for_window [class="Microsoft Teams - Preview"] move to workspace $ws7
 
 # Load Geary
 exec geary
+for_window [class="Geary"] move to workspace $ws6
+
+# Load kalarm
+exec kalarm
 for_window [class="Geary"] move to workspace $ws6
 
 # Start DMenu
