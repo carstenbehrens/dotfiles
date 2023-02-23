@@ -14,4 +14,3 @@ map('n', '<c-q>', '<CMD>q!<CR>')
 -- Save file
 map('n', '<c-s>', '<CMD>w!<CR>')
 
-
