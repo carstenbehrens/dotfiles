@@ -1,6 +1,8 @@
 {
-    "height": 40, // Waybar height (to be removed for auto height)
     "spacing": 12, // Gaps between modules (4px)
+    "margin-top": 8,
+    "margin-left": 8,
+    "margin-right": 8,
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/window",  "sway/mode"],
     "modules-center": [],

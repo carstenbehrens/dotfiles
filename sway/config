@@ -153,4 +153,7 @@ gaps inner 10
 focus_follows_mouse no
 bindsym $mod+Tab workspace back_and_forth
 
+# Start network manager
+exec_always nm-applet --indicator
+
 include /etc/sway/config.d/*
