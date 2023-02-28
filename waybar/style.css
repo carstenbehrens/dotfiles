@@ -12,6 +12,7 @@ window#waybar {
 }
 
 #workspaces button {
+    min-width: 20px;
     border-radius: 9px;
     background: #dce0e8;
     color: #282a36;

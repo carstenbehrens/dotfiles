@@ -7,7 +7,6 @@ plugins=(git zsh-vi-mode zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 source /home/cbe/.oh-my-zsh/custom/plugins/zsh-vi-mode
 
-alias fd="fdfind"
 alias network="nm-connection-editor"
 
 export NVM_DIR="$HOME/.nvm"
