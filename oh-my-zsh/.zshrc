@@ -5,7 +5,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh-vi-mode zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-source /home/cbe/.oh-my-zsh/custom/plugins/zsh-vi-mode
 
 alias network="nm-connection-editor"
 
